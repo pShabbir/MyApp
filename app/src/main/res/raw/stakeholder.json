@@ -1,0 +1,48 @@
+{
+  "StakeHolder" : [
+    {
+            "id":"1",
+            "name":"Child Rights",
+            "image":"splash.jpg",
+            "address":"This few lines will contains Details
+      Address:
+      A-2 tata steel officers enclave
+      Beta 2 ,greater Noida",
+            "email":"abc@gmail.com,
+            "phone":"8447149834",
+            "lat":"28.6144",
+            "long":"77.1996"
+    },
+    {
+      "id":"2",
+      "name":"This contains name of organization 2",
+      "address":"This contais address of concerning organization",
+      "contact":"Here we will describe the contact info"
+
+    },
+    {
+      "id":"3",
+      "name":"This contains name of organization 3",
+      "address":"This contais address of concerning organization",
+      "contact":"Here we will describe the contact info"
+
+    },
+    {
+
+          "id":"4",
+        "name":"This contains name of organization 4",
+        "address":"This contais address of concerning organization",
+        "contact":"Here we will describe the contact info"
+
+    },
+    {
+
+          "id":"5",
+        "name":"This contains name of organization 4",
+        "address":"This contais address of concerning organization",
+        "contact":"Here we will describe the contact info"
+
+    }
+  ]
+
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.vissionarray.shabbirhussain.newchilsacts.CaseStudyDetails">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/caseStudyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:text="Title"
+                android:textColor="@android:color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/caseStudyDescription"
+                style="@style/CustomText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Description" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/transitions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginTop="450dp">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blurredbg"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Font Size"
+                        android:textSize="20sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="20dp"
+                        android:progress="18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Night Mode"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/myswitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:progress="18" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="10dp">-->
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/down"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:onClick="goGone"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:text="DO MAGIC"-->
+                <!--app:backgroundTint="?android:attr/colorActivatedHighlight"-->
+                <!--app:elevation="10dp"-->
+                <!--app:srcCompat="@android:drawable/ic_delete" />-->
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="80dp"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@android:drawable/ic_input_add"-->
+                <!--android:text="DO MAGIC"-->
+                <!--app:backgroundTint="@color/myGray"-->
+                <!--app:elevation="10dp" />-->
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/share"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="80dp"-->
+                <!--android:onClick="shareContent"-->
+                <!--android:text="DO MAGIC"-->
+                <!--app:elevation="10dp"-->
+                <!--app:srcCompat="@mipmap/share" />-->
+
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="31dp"
+        android:clickable="true"
+        android:onClick="shareContent"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/share"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

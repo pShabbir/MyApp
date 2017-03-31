@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NewChilsActs</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Single Platform. All laws</string>
+    <string name="slide_1_desc">Butterflies and Unicorns provides a unique, single and unified platform for all the child related acts in the republic of India.</string>
+
+    <string name="slide_2_title">Case Studies</string>
+    <string name="slide_2_desc">Butterflies and Unicorns provides numerous enthralling case studies and stories to impart knowledge of child related acts at a deeper level.</string>
+
+    <string name="slide_3_title">Know who care</string>
+    <string name="slide_3_desc">Complete knowledge of various stakeholders at your fingertips.</string>
+
+    <string name="slide_4_title">Let\'s be in QUIZitive</string>
+    <string name="slide_4_desc">Amazing quiz game to keep the things game and making children learn through questions.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+</resources>

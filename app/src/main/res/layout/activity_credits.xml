@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="com.vissionarray.shabbirhussain.newchilsacts.StakeHolderDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Tejas-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorPrimary"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#000000"
+                    android:alpha="0.4  "/>
+
+                <TextView
+                    android:id="@+id/a0"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="monospace"
+                    android:text="Tejas Upmanyu"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+
+                <View
+
+                    android:layout_marginTop="110dp"
+                    android:layout_width="240dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="#ffffff"/>
+
+
+                <TextView
+                    android:id="@+id/a1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="monospace"
+                    android:text="tejasupmanyu@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/a2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="monospace"
+                    android:text="IOS Develper"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </FrameLayout>
+            <!--Shabbir-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@mipmap/sh"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#000000"
+                    android:alpha="0.4  "/>
+
+                <TextView
+                    android:id="@+id/a3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="monospace"
+                    android:text="Shabbir Hussain"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+
+                <View
+
+                    android:layout_marginTop="110dp"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#ffffff"/>
+
+
+                <TextView
+                    android:id="@+id/a4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="monospace"
+                    android:text="pshabbir36@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/a5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="monospace"
+                    android:text="Android Develper"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </FrameLayout>
+            <!--Shivam-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorAccent"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#000000"
+                    android:alpha="0.4  "/>
+
+                <TextView
+                    android:id="@+id/a6"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="monospace"
+                    android:text="Shivam Bharadwaj"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+
+                <View
+
+                    android:layout_marginTop="110dp"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#ffffff"/>
+
+
+                <TextView
+                    android:id="@+id/a7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="monospace"
+                    android:text="shivamb45@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+                <TextView
+
+                    android:id="@+id/a8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="monospace"
+                    android:text="Web Develper"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </FrameLayout>
+            <!--Nidhi-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#37a915"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#000000"
+                    android:alpha="0.4  "/>
+
+                <TextView
+                    android:id="@+id/a9"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="monospace"
+                    android:text="Nidhi Tiwari"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+
+                <View
+
+                    android:layout_marginTop="110dp"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#ffffff"/>
+
+
+                <TextView
+                    android:id="@+id/a10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="monospace"
+                    android:text="nidhitiwari2696@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/a11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="monospace"
+                    android:text="Data Curator and Design"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+            </FrameLayout>
+            <!--Kavya-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/holo_red_light"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#000000"
+                    android:alpha="0.4  "/>
+
+                <TextView
+                    android:id="@+id/a12"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="monospace"
+                    android:text="Kavya Gupta"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+
+                <View
+
+                    android:layout_marginTop="110dp"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#ffffff"/>
+
+
+                <TextView
+                    android:id="@+id/a13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="monospace"
+                    android:text="kavyagupta867@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/a14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="monospace"
+                    android:text="Data Curator and Design"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+            </FrameLayout>
+            <!--Sidhant-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/darker_gray"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#000000"
+                    android:alpha="0.4  "/>
+
+                <TextView
+                    android:id="@+id/a15"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="monospace"
+                    android:text="Sidhant Mishra"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+
+                <View
+
+                    android:layout_marginTop="110dp"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#ffffff"/>
+
+
+                <TextView
+                    android:id="@+id/a16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="monospace"
+                    android:text="sidhantgogreen@gmail.com"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/a17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="monospace"
+                    android:text="Design and Support"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

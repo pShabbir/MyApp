@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vissionarray.shabbirhussain.newchilsacts.Home"
+    android:scaleType="centerCrop">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@mipmap/a"/>
+
+        <ImageView
+            android:id="@+id/background_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@mipmap/b"/>
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:id="@+id/childActs"-->
+                <!--android:layout_width="380dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/myWhite"-->
+                <!--android:elevation="10dp"-->
+                <!--android:fadingEdge="horizontal|vertical"-->
+                <!--android:onClick="childActs"-->
+                <!--android:padding="50dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@mipmap/acts"-->
+                <!--app:riv_corner_radius="10dp" />-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/childActs"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:padding="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/acts"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:elevation="0dp"
+                    android:text="Button"
+                    android:onClick="childActs"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:alpha="0.7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    />
+            </FrameLayout>
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:id="@+id/caseStudy"-->
+                <!--android:layout_width="380dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/myWhite"-->
+                <!--android:elevation="10dp"-->
+                <!--android:fadingEdge="horizontal|vertical"-->
+                <!--android:onClick="caseStudy"-->
+                <!--android:padding="50dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@mipmap/casestudy"-->
+                <!--android:visibility="visible"-->
+                <!--app:riv_corner_radius="10dp" />-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/caseStudy"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:padding="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/casestudy"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:elevation="0dp"
+                    android:text="Case Study"
+                    android:onClick="caseStudy"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:alpha="0.7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    />
+            </FrameLayout>
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:id="@+id/stakeHolder"-->
+                <!--android:layout_width="380dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/myWhite"-->
+                <!--android:elevation="10dp"-->
+                <!--android:fadingEdge="horizontal|vertical"-->
+                <!--android:onClick="stakeHolder"-->
+                <!--android:padding="50dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@mipmap/stake"-->
+                <!--app:riv_corner_radius="10dp" />-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/stakeHolder"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:padding="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/stake"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:elevation="0dp"
+                    android:onClick="stakeHolder"
+                    android:text="Stakeholders"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:alpha="0.7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    />
+            </FrameLayout>
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:id="@+id/quiz"-->
+                <!--android:layout_width="380dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/myWhite"-->
+                <!--android:elevation="10dp"-->
+                <!--android:fadingEdge="horizontal|vertical"-->
+                <!--android:onClick="Quiz"-->
+                <!--android:padding="50dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@mipmap/quizhm"-->
+                <!--app:riv_corner_radius="10dp" />-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/quiz"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:onClick="Quiz"
+                    android:padding="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/quizhm"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:elevation="0dp"
+                    android:text="Quiz"
+                    android:onClick="Quiz"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:alpha="0.7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/acknowledgement"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:padding="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ack"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:elevation="0dp"
+                    android:onClick="ack"
+                    android:text="Acknowledgement"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:alpha="0.7"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    />
+            </FrameLayout>
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:id="@+id/credit"-->
+                <!--android:layout_width="380dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/myWhite"-->
+                <!--android:elevation="10dp"-->
+                <!--android:fadingEdge="horizontal|vertical"-->
+                <!--android:onClick="credit"-->
+                <!--android:padding="50dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@mipmap/credit"-->
+                <!--app:riv_corner_radius="10dp" />-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/credit"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:padding="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/acts"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:elevation="0dp"
+                    android:onClick="credit"
+                    android:text="Credits"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:alpha="0.7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    />
+            </FrameLayout>
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:id="@+id/news"-->
+                <!--android:layout_width="380dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/myWhite"-->
+                <!--android:elevation="10dp"-->
+                <!--android:fadingEdge="horizontal|vertical"-->
+                <!--android:onClick="news"-->
+                <!--android:padding="50dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@android:color/holo_green_light"-->
+                <!--app:riv_corner_radius="10dp" />-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/news"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:padding="50dp"
+                    android:src="@mipmap/news"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:elevation="0dp"
+                    android:text="News"
+                    android:onClick="news"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:alpha="0.7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/contactUs"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal|vertical"
+                    android:padding="50dp"
+                    android:scaleType="center"
+                    android:src="@color/colorAccent"
+                    app:riv_corner_radius="10dp" />
+
+                <Button
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="458dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/round_button2"
+                    android:elevation="0dp"
+                    android:onClick="contactUs"
+                    android:text="Contact US"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:typeface="normal" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

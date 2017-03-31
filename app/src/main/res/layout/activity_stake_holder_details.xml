@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cabg"
+    tools:context="com.vissionarray.shabbirhussain.newchilsacts.StakeHolderDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/stakeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of StakeHolder"
+                android:background="@android:color/holo_red_dark"
+                android:textSize="40sp"
+                android:textColor="#ffffff"
+                android:gravity="clip_horizontal"/>
+
+                <ImageView
+                    android:id="@+id/stakeHolderImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/homebg" />
+
+                <TextView
+                    android:id="@+id/stakeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address Of stake Holder"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:alpha="0.5"
+                    android:paddingBottom="50dp"
+                    />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/mail"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="mailMe"
+                            android:text="Mail" />
+
+                        <Button
+                            android:id="@+id/call"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="makeCall"
+                            android:text="Call" />
+                    </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/myMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:onClick="showLocation"
+                    app:srcCompat="@mipmap/map"
+                    android:paddingBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="34dp"
+        android:clickable="true"
+        android:onClick="shareContent"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/share" />
+
+</RelativeLayout>

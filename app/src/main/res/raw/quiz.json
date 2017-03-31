@@ -1,0 +1,29 @@
+{
+	"score":"0",
+  	"quiz":[
+	  {
+       "question" : "Q.Who is the president of Uganda ?",
+       "option1" :"Nigga",
+       "option2" :"True Nigga",
+        "option3" :"Actual Nigga",
+        "option4" :"Original Nigga",
+       "answer" : "Nigga"
+    },
+      {
+        "question" : "Q.Who is the CEO of Bakwass ?",
+        "option1" :"No One",
+        "option2" :"Every One",
+        "option3" :"BhadMai Jao",
+        "option4" :"Ha Mai nai bataunga",
+        "answer" : "Every One"
+      },
+    {
+       "question" : "Q.Who is the president of Africa ?",
+       "option1" :"Ipsum",
+       "option2" :"Dosum",
+      "option3" :"morum",
+      "option4" :"chorum",
+       "answer" : "chorum"
+    }
+    ]
+}
