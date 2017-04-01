@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/bgstakeholder"
     tools:context="com.vissionarray.shabbirhussain.newchilsacts.StakeHolder">
 
     <LinearLayout
@@ -16,17 +15,18 @@
             android:id="@+id/my_toolbarstakeHolder"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/myWhite"
-            android:elevation="4dp"
+            android:background="#4fc3f7"
+            android:elevation="11dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:alpha="0.7"/>
+            />
 
         <ListView
             android:id="@+id/stakeHolderListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/ListViewCustomStyle"
+            android:background="#ffeb3b"
+            android:divider="@null"
             />
     </LinearLayout>
 

@@ -50,7 +50,7 @@ public class StakeHolder extends AppCompatActivity {
         ListView ls=(ListView)findViewById(R.id.stakeHolderListView);
         //ArrayAdapter adapter=new ArrayAdapter(this,R.layout.support_simple_spinner_dropdown_item,stakeHolder);
         //ListAdapter adapter=new myAdapter(this,stakeHolder);
-        adapter =  new ArrayAdapter<String>(this, R.layout.my_adapter, R.id.my_adapter_textview, arr);
+        //adapter =  new ArrayAdapter<String>(this, R.layout.my_adapter, R.id.my_adapter_textview, arr);
         adapter=new myAdapter(this,arr);
         ls.setAdapter(adapter);
 
@@ -65,7 +65,7 @@ public class StakeHolder extends AppCompatActivity {
                 startActivity(i);
 
                 //Animate
-                overridePendingTransition( R.anim.slide_up_animation, R.anim.slide_down_animation );
+                overridePendingTransition( R.anim.rtol, R.anim.activity_close );
             }
         });
 

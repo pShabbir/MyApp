@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vissionarray.shabbirhussain.newchilsacts">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/myicon"
@@ -10,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <uses-permission android:name="android.permission.INTERNET" />
+        <!--  -->
+
+
+        <!--  -->
 
         <activity
             android:name=".MainActivity"
@@ -34,7 +41,8 @@
         <activity android:name=".Credits" />
         <activity android:name=".News" />
         <activity android:name=".NewsDetails" />
-        <activity android:name=".Here"></activity>
+        <activity android:name=".Here" />
+        <activity android:name=".AboutNCPCR"></activity>
     </application>
 
 </manifest>

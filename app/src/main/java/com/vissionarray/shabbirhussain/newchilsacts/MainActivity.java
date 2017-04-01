@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         //Providing the toolbar on top of casestudy list to facilitates the searching of laws.
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbarchildActs);
         setSupportActionBar(myToolbar);
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 "Amendment Proposed in Immoral Traffic Prevention Act 1956","Bonded Labour system (abolition)  Act ,1976",
                 "The Factories Act","Prenatural diagnostic techniques (regulation and prevention of misuse) act 1994",
                 "The infant Milk Substitute Act, 2003","Juvenile  Justice (Care and Protection of Children) Act, 2015",
-                "Act 9","National Guidelines on Infant and Young Child Feeding",
+                "The Protection Of Children From Sexual Offences Act, 2012","National Guidelines on Infant and Young Child Feeding",
                 "National Commission for Protection of Child Rights","Guardians and Wards Act, 1890",
                 "The Immoral Traffic (Prevention) Act, 1956","Scheduled Castes and Tribes (Prevention of Atrocities) Act, 1989",
                 "Hindu Adoption and Maintenance Act, 1956","Right to Food Legislation and Children",
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         ListView ls=(ListView)findViewById(R.id.listView);
 
         //An ArrayAdapter<String> adapter that takes the string array and display the list as per my_adapter layout
-         adapter =  new ArrayAdapter<String>(this, R.layout.my_adapter, R.id.my_adapter_textview, arr);
+         //adapter =  new ArrayAdapter<String>(this, R.layout.my_adapter, R.id.my_adapter_textview, arr);
          adapter=new myAdapter(this,arr);
          ls.setAdapter(adapter);
 
@@ -80,12 +81,14 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String pos=String.valueOf(position);
                 Toast.makeText(MainActivity.this,pos,Toast.LENGTH_LONG).show();
+
+                //Redirecting the string representation to deatil page activity along with the position is clicked
                 Intent i=new Intent(MainActivity.this,ChildActsDetails.class);
                 i.putExtra("json",entireFile);
                 i.putExtra("position",pos);
                 startActivity(i);
-                //Animate
-                overridePendingTransition( R.anim.slide_in_up, R.anim.slide_out_up );
+                //Animate the transition to next page
+                 overridePendingTransition( R.anim.rtol, R.anim.activity_close );
             }
         });
 

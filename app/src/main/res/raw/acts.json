@@ -130,13 +130,24 @@ The bill also deals with adoption of children and lays down the eligibility crit
 
     },
     {
-              "id":"9",
-              "title":"Not Yet Provided",
-              "introduction":"Data still need to be provided",
-              "punishment":"",
-              "reference":""
+      "id":"9",
+      "title":"The Protection Of Children From Sexual Offences Act, 2012",
+      "introduction":"It is an Act to protect children from offences of sexual assault, sexual harassment and pornography and also provides establishment of Special Courts for trial of such offences . The Protection of Children from Sexual Offences Act, 2012, has been passed by the Lok Sabha today, 22nd May, 2012.
+      The protection of Children from Sexual Offence Act, 2012 defines a child as any person below the age of 18 years and provides protection to all children under the age of 18 years from the offences of Sexual assault,  sexual harassment and pornography. These offences have been clearly defined for the first time in law. The Act provides for stringent punishments, which have been graded as per the gravity of the offence . The punishments range from simple to rigorous imprisonment of varying periods. There is also provision for fine, which is to be decided by the Court.
+      An offence is treated as “Aggravated” when committed by a person in a position of trust or authority of child such as a member of security forces , police officers , public servants ,etc.
+      ",
+      "punishment":"•	Sexual Assault (Section 7) - Not less than three years which may extend to five years, and fine (Section 8);
+      •	Aggravated Sexual Assault (Section 9) - Not less than five years which may extend to seven years, and fine (Section 10);
+      •	Sexual Harassment of the Child (Section 11) - Three years and fine (Section 12);
+      •	Penetrative Sexual Assault (Section 3) - Not less than seven years which may extend to imprisonment for life, and fine (Section 4);
+      •	Aggravated Penetrative Sexual Assault (Section 5) - Not less than ten years which may extend to imprisonment for life, and fine (Section 6);
+      •	Use of Child for Pornographic Purposes (Section 13) - Five years and fine and in the event of subsequent conviction, seven years and fine (Section 14 (1));
+      ",
+      "reference":"•	https://en.wikipedia.org/wiki/Child_sexual_abuse_laws_in_India ;
+      •	http://childlineindia.org.in/The-Protection-of-Children-from-Sexual-Offences-Act-2012.htm ;
+    "
 
-      },
+    },
 
 	{
             "id":"10",

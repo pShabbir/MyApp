@@ -1,6 +1,7 @@
 package com.vissionarray.shabbirhussain.newchilsacts;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,6 +32,9 @@ public class StakeHolderDetails extends AppCompatActivity {
         String jsonfile=bundle.getString("json");
         String getPosition=bundle.getString("position");
 
+        //TypeFace
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/avenir.otf");
+
 
         try {
 
@@ -47,10 +51,11 @@ public class StakeHolderDetails extends AppCompatActivity {
 
             TextView t1=(TextView)findViewById(R.id.stakeName);
             t1.setText(data.getString("name"));
+            t1.setTypeface(custom_font);
 
             TextView t2=(TextView)findViewById(R.id.stakeAddress);
             t2.setText(data.getString("address"));
-
+            t2.setTypeface(custom_font);
 //            TextView t3=(TextView)findViewById(R.id.stakeContactInfo);
 //            t3.setText(data.getString("contact"));
 

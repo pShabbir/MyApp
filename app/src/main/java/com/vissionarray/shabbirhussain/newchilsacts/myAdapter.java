@@ -1,6 +1,7 @@
 package com.vissionarray.shabbirhussain.newchilsacts;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.provider.SyncStateContract;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -23,8 +24,11 @@ public class myAdapter extends ArrayAdapter<String> {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         View customView = layoutInflater.inflate(R.layout.my_adapter,parent,false);
 
+        //TypeFace
+        Typeface custom_font = Typeface.createFromAsset(getContext().getAssets(),  "fonts/avenir.otf");
         String s=getItem(position);
         TextView txt=(TextView)customView.findViewById(R.id.my_adapter_textview);
+        txt.setTypeface(custom_font);
         txt.setText(s);
 
         return customView;

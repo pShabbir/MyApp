@@ -47,6 +47,9 @@ public class CaseStudyDetails extends AppCompatActivity implements GestureDetect
         String jsonfile = bundle.getString("json");
         String getPosition = bundle.getString("position");
 
+        //TypeFace
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/avenir.otf");
+
         //Parsing the json and displaying the result on view
         try {
             JSONObject jsonObject = new JSONObject(jsonfile);
@@ -55,9 +58,11 @@ public class CaseStudyDetails extends AppCompatActivity implements GestureDetect
             info = new String(c.getString("info"));
             TextView t1 = (TextView) findViewById(R.id.caseStudyTitle);
             t1.setText(c.getString("name"));
+            t1.setTypeface(custom_font);
 
             TextView t2 = (TextView) findViewById(R.id.caseStudyDescription);
             t2.setText(c.getString("info"));
+            t2.setTypeface(custom_font);
 
         } catch (Exception e) {
             e.printStackTrace();

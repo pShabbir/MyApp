@@ -15,14 +15,20 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/childActsDetailsPic"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/acts"/>
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:fontFamily="monospace"
-                android:gravity="center_horizontal"
                 android:text="Title"
+                style="@style/CustomText"
                 android:textColor="@android:color/white"
                 android:textSize="30sp" />
 
@@ -31,12 +37,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Introduction"
+                android:textColor="#000000"
                 style="@style/CustomText"/>
-                <!--android:lineSpacingExtra="5dp"-->
-                <!--android:padding="15dp"-->
-                <!--android:textColor="@color/myGray"-->
-                <!--android:textSize="18sp"-->
-                <!---->
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -51,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Punishment"
+                android:textColor="#000000"
                 style="@style/CustomText" />
 
             <TextView
@@ -66,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Reference"
+                android:textColor="#000000"
                 style="@style/CustomText"
                 />
         </LinearLayout>
@@ -79,7 +84,7 @@
         android:orientation="vertical"
         android:visibility="visible"
         android:layout_marginTop="450dp"
-        android:background="@drawable/blurredbg">
+        android:background="@color/colorPrimary">
 
 
         <FrameLayout

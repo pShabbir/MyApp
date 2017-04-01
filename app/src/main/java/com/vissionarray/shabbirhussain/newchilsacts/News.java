@@ -3,9 +3,13 @@ package com.vissionarray.shabbirhussain.newchilsacts;
 import android.animation.LayoutTransition;
 import android.app.ProgressDialog;
 import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.view.MenuItemCompat;
@@ -89,22 +93,42 @@ public class News extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
 
-
-        String a[]={
-                "https://newsapi.org/v1/articles?source=the-hindu&sortBy=latest&apiKey=899f63f5b7084937bccd7419bb8be942",
-                " https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=899f63f5b7084937bccd7419bb8be942",
-                " https://newsapi.org/v1/articles?source=the-times-of-india&sortBy=top&apiKey=899f63f5b7084937bccd7419bb8be942",
-                "https://newsapi.org/v1/articles?source=the-verge&sortBy=top&apiKey=899f63f5b7084937bccd7419bb8be942"
-        };
-        Random rand=new Random();
-        int  n = rand.nextInt(3) + 0;
-
-
-        new JsonTask().execute(a[n]);
+        //This method is used to check internet connection before opening app
+//        if(!checkConnection())
+//        {
+//            Toast.makeText(this,"No internet connection",Toast.LENGTH_LONG).show();
+//            Intent i=new Intent(this,Home.class);
+//            startActivity(i);
+//            finish();
+//        }
 
 
+            String a[] = {
+                    "https://newsapi.org/v1/articles?source=the-hindu&sortBy=latest&apiKey=899f63f5b7084937bccd7419bb8be942",
+                    " https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=899f63f5b7084937bccd7419bb8be942",
+                    " https://newsapi.org/v1/articles?source=the-times-of-india&sortBy=top&apiKey=899f63f5b7084937bccd7419bb8be942",
+                    "https://newsapi.org/v1/articles?source=the-verge&sortBy=top&apiKey=899f63f5b7084937bccd7419bb8be942"
+            };
+            Random rand = new Random();
+            int n = rand.nextInt(3) + 0;
 
 
+            new JsonTask().execute(a[n]);
+
+
+
+
+    }
+
+    public boolean checkConnection(){
+        ConnectivityManager cm=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+        if(networkInfo == null){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 
 

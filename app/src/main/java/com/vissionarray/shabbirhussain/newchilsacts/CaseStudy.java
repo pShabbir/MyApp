@@ -51,14 +51,16 @@ public class CaseStudy extends AppCompatActivity {
                 ,"Child Welfare Committee issues directions for registration of case",
                 "Story of K.Sandhya from Chandupatla Village, Nalgonda",
                 "Citing Muslim Personal Law Delhi Court Justifies Marriage Of A 15-Yr-Old Girl.",
-                "TAMIL NADU RANKS FIRST IN IMMORAL TRAFFICKING.",
+                "Tamil Nadu Ranks First in Immoral Trafficing.",
                 "Initiatives pertaining to beedi work",
-                "Assessment and affirmative action by a UNHCR HealtH officers",
-                "Individual Cases alert UNHCR of Critical gaps in IYCF system "};
+                "Assessment and affirmative action by a UNHCR Health officers",
+                "Individual Cases alert UNHCR of Critical gaps in IYCF system ",
+        "Child Welfare Committee issues directions for registration of case",
+        "Five cases of child molestation in Indian schools"};
         ListView ls=(ListView)findViewById(R.id.caseStudyListView);
         //ArrayAdapter adapter=new ArrayAdapter(this,R.layout.support_simple_spinner_dropdown_item,arr);
         //ListAdapter adapter=new myAdapter(this,arr);
-        adapter =  new ArrayAdapter<String>(this, R.layout.my_adapter, R.id.my_adapter_textview, arr);
+       // adapter =  new ArrayAdapter<String>(this, R.layout.my_adapter, R.id.my_adapter_textview, arr);
         adapter=new myAdapter(this,arr);
         ls.setAdapter(adapter);
 

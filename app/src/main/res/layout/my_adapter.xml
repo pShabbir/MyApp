@@ -5,22 +5,24 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/my_adapter_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Animation.AppCompat.Dialog"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="Hello world"
-        android:padding="5dp"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:alpha="0.7">
+        <TextView
+            android:id="@+id/my_adapter_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:padding="5dp"
+            android:text="Hello world"
+            android:textAppearance="@style/Animation.AppCompat.Dialog"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </android.support.v7.widget.CardView>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:srcCompat="@drawable/thinrightarrow"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="5dp"
-        />
+
 </LinearLayout>

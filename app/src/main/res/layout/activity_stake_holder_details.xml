@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cabg"
     tools:context="com.vissionarray.shabbirhussain.newchilsacts.StakeHolderDetails">
 
 
@@ -15,21 +14,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/stakeName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name of StakeHolder"
                 android:background="@android:color/holo_red_dark"
-                android:textSize="40sp"
+                android:text="Name of StakeHolder"
+                style="@style/CustomText"
                 android:textColor="#ffffff"
-                android:gravity="clip_horizontal"/>
+                android:textSize="40sp" />
 
                 <ImageView
                     android:id="@+id/stakeHolderImage"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:src="@drawable/homebg" />
+                    android:src="@drawable/a0" />
 
                 <TextView
                     android:id="@+id/stakeAddress"
@@ -39,6 +39,7 @@
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:alpha="0.5"
+                    style="@style/CustomText"
                     android:paddingBottom="50dp"
                     />
                     <LinearLayout

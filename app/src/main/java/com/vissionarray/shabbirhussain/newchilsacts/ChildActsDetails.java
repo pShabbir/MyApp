@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.CompoundButton;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -45,6 +46,9 @@ public class ChildActsDetails extends AppCompatActivity implements GestureDetect
         String jsonfile=bundle.getString("json");
         String getPosition=bundle.getString("position");
 
+        //TypeFace
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/avenir.otf");
+
         try {
             JSONObject jsonObject=new JSONObject(jsonfile);
             JSONArray acts=jsonObject.getJSONArray("Acts");
@@ -52,10 +56,11 @@ public class ChildActsDetails extends AppCompatActivity implements GestureDetect
             //data = c.getString("name");
 
              title=(TextView)findViewById(R.id.title);
-            title.setText(c.getString("title"));
+             title.setText(c.getString("title"));
+
 
              introduction=(TextView) findViewById(R.id.introduction);
-            introduction.setText(c.getString("introduction"));
+             introduction.setText(c.getString("introduction"));
 
              punishment=(TextView)findViewById(R.id.punishment);
             //Getting the punishment and displaying it in bulleted
@@ -64,13 +69,23 @@ public class ChildActsDetails extends AppCompatActivity implements GestureDetect
             test="";
             for (int i=0;i<arr.length;i++)
                 test = test+arr[i]+"\n";
-            //punishment.setText(c.getString("punishment"));
+
             punishment.setText(test);
 
              reference=(TextView)findViewById(R.id.reference);
-            reference.setText(c.getString("reference"));
+             reference.setText(c.getString("reference"));
 
             info=new String(c.getString("introduction"));
+
+            String uri = "@drawable/a"+getPosition;  // where myresource (without the extension) is the file
+            int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+            ImageView imageView=(ImageView)findViewById(R.id.childActsDetailsPic);
+            imageView.setImageResource(imageResource);
+
+            title.setTypeface(custom_font);
+            introduction.setTypeface(custom_font);
+            punishment.setTypeface(custom_font);
+            reference.setTypeface(custom_font);
 
 
         }catch (Exception e){

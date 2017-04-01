@@ -28,17 +28,18 @@ dependencies {
 
     //RoundedImageView
     //Round image
-    
 
     ///////
-    
+
+
+    compile 'com.android.support:cardview-v7:25.3.1'
 
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
-    compile 'com.android.support:design:25.3.0'
+    compile 'com.android.support:design:25.3.1'
     compile 'com.makeramen:roundedimageview:2.3.0'
-    compile 'org.apache.httpcomponents:httpcore:4.4.1'
-    compile 'org.apache.httpcomponents:httpclient:4.5'
+//    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+//    compile 'org.apache.httpcomponents:httpclient:4.5'
     compile 'com.koushikdutta.ion:ion:2.+'
     testCompile 'junit:junit:4.12'
 }

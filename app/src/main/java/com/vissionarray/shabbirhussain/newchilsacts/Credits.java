@@ -12,7 +12,7 @@ public class Credits extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
 
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/product.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/avenir.otf");
 
         TextView[] arr=new TextView[18];
         for(int i=0;i<18;i++){

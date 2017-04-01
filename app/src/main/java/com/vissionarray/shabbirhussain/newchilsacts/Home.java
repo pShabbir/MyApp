@@ -1,9 +1,14 @@
 package com.vissionarray.shabbirhussain.newchilsacts;
 
 import android.animation.ValueAnimator;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
@@ -22,8 +27,7 @@ import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
 
-    private Boolean isFabOpen = false;
-    private Animation fab_open,fab_close,rotate_forward,rotate_backward;
+
 
     Bitmap acts,caseStudy,stake,quiz,credits,ack;
 
@@ -36,6 +40,9 @@ public class Home extends AppCompatActivity {
 
         //This method calls method that animates the moving image in the background
         callAnimate();
+
+
+
 
     }
     public void callAnimate(){
@@ -70,6 +77,7 @@ public class Home extends AppCompatActivity {
 
     //This method calls Activity that display the child acts lists.
     public void childActs(View view){
+
         Intent i=new Intent(Home.this,MainActivity.class);
                 startActivity(i);
         overridePendingTransition( R.anim.slide_in_up, R.anim.slide_out_up );
@@ -112,21 +120,50 @@ public class Home extends AppCompatActivity {
 
     //This method calls Activity thats display latest news.
     public void news(View view){
-        Intent i=new Intent(this,News.class);
-        overridePendingTransition(R.anim.flip_in, R.anim.flip_out);
-        startActivity(i);
+
+       if(checkConnection()){
+           Intent i=new Intent(this,News.class);
+           overridePendingTransition(R.anim.flip_in, R.anim.flip_out);
+           startActivity(i);
+       }else{
+           Toast.makeText(this,"No internet connection",Toast.LENGTH_LONG).show();
+       }
     }
 
     //This method calls Activity that take us to web page where we can connect to NCPCR.
     public void contactUs(View view){
-       Intent i=new Intent(Home.this,Here.class);
-        overridePendingTransition(R.anim.flip_in, R.anim.flip_out);
-        startActivity(i);
+      try {
+          if(checkConnection()){
+              Intent i=new Intent(this,Here.class);
+              overridePendingTransition(R.anim.flip_in, R.anim.flip_out);
+              startActivity(i);
+          }else {
+              Toast.makeText(this,"No internet connection",Toast.LENGTH_LONG).show();
+          }
+      }catch (Exception e){
+          e.printStackTrace();
+      }
     }
 
+    public void aboutNcpcr(View view){
+        Intent i = new Intent(this,AboutNCPCR.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.flip_in, R.anim.flip_out);
+    }
     @Override
     public void onBackPressed() {
 
         android.os.Process.killProcess(android.os.Process.myPid());
+    }
+
+    public boolean checkConnection(){
+        ConnectivityManager cm=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+        if(networkInfo == null){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 }
